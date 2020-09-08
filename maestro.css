@@ -1,2 +1,2 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");*{font-size:20px;font-family:Montserrat,sans-serif}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");*{font-size:20px;font-family:Montserrat,sans-serif;line-height:1}h1,h2{color:#482069}h3{color:#e83c4e}.container{width:100%;max-width:1600px;margin:0 auto;padding:0 50px;position:relative}img{max-width:100%;height:auto}section{background:#fff}#section-1 .container{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}#section-1 .half{width:48%;margin:0 2%}
 /*# sourceMappingURL=maestro.css.map */
