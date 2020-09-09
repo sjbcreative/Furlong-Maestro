@@ -22,6 +22,12 @@ function style() {
     );
 }
 
+// Refresh html pages when changed
+function reload(done) {
+  browserSync.reload();
+  done();
+}
+
 
 // Add browsersync initialization at the start of the watch task
 function watch() {
@@ -46,6 +52,7 @@ function watch() {
     });
 
     gulp.watch("./maestro.scss", style);
+    gulp.watch('*.html', reload);
 }
 
 exports.style = style;
