@@ -16,20 +16,57 @@ $offred: #e83c4e;
 	line-height: 1;
 }
 
+body {
+	margin: 0;
+}
+
 h1, h2 {
 	color: $purple;
 }
 
+h1 {
+  font-size: 45px;
+  letter-spacing: 0.1px;
+  font-weight: 500;
+  line-height: 1;
+  margin: 0 0 27px;
+}
+
+h2 {
+	margin: 0 0 38px;
+}
+
 h3 {
 	color: $offred;
+	font-weight: normal;
+	letter-spacing: 0.2px;
+	line-height: 1;
+	margin: 0 0 58px;
+}
+
+p  {
+	font-size: 24px;
+  letter-spacing: -0.2px;
+  line-height: 1.3;
+}
+
+b, strong {
+  font-weight: 500;
+}
+
+ul li,
+ul li * {
+	font-size: 24px;
+  letter-spacing: -0.2px;
+  line-height: 1.3;
 }
 
 .container {
 	width: 100%;
-	max-width: 1600px;
-    margin: 0 auto;
-    padding: 0 50px;
-    position: relative;
+	max-width: 1563px;
+  margin: 0 auto;
+  padding: 0 30px;
+  position: relative;
 }
 
 img {
@@ -38,16 +75,98 @@ img {
 }
 
 section {
+	width: 100%;
+	float: left;
 	background: $white;
 }
 
-#section-1 {
-	.container {
-		display: flex;
+#header-nav {
+
+	&.top {
+    padding: 46px 0 24px 0;
 	}
 
-	.half {
-		width: 48%;
-		margin: 0 2%;
+	&:not(.mobile) .menu {
+    top: -24px;
+  }
+
+	.logo {
+    height: auto;
+    width: 310px;
+	}
+}
+
+.contact-button a {
+	padding: 9px 21px;
+}
+
+#section-1 {
+  padding: 76px 0;
+
+	.container {
+		display: flex;
+		align-items: flex-start;
+		justify-content: flex-start;
+	}
+
+	.left {
+		width: 750px;
+
+		> p {
+			margin: 0 0 26px;
+
+			&:first-of-type {
+				width: 94%
+			}
+
+			&:last-of-type {
+				width: 90%
+			}
+		}
+	}
+
+	.right {
+    width: 496px;
+    margin: -8px auto 0;
+
+    li {
+    	background: url(./images/clap-red.svg) no-repeat transparent;
+    	background-position: left 50%;
+    	background-size: 65px;
+    	padding-left: 94px;
+    	margin: 0 0 27px;
+
+    	strong {
+    		color: $offred;
+    	}
+
+    	&:nth-child(even) {
+    		background: url(./images/clap-purple.svg) no-repeat transparent;
+    		background-position: 9px 38%;
+    		background-size: 65px;
+
+    		strong {
+    			color: $purple;
+    		}
+    	}
+
+    	&:nth-last-child(2) {
+    		margin: 0 0 50px;
+    	}
+
+    	&.last {
+    		background: transparent;
+    		padding-left: 10px;
+
+    		strong {
+    			width: 100%;
+    			float: left;
+    		}
+    	}
+    }
+	}
+
+	h3 {
+		width: 90%;
 	}
 }
