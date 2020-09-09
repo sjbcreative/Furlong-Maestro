@@ -286,6 +286,96 @@ section {
 	}
 }
 
+#section-3 {
+	padding: 73px 0;
+
+	.container {
+    max-width: 1470px;
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+	}
+
+	.maestro-testimonial {
+		width: 50%;
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+
+		&:last-of-type {
+			padding-left: 20px;
+
+			img {
+				margin-top: 15px;
+		    width: 174px;
+			}
+
+			h4 {
+				color: $offred;
+			}
+
+			span {
+				color: $offred;
+			}
+		}
+
+		> div {
+			width: calc(100% - 170px);
+			padding-left: 25px;
+			padding-right: 40px;
+		}
+	}
+
+	img {
+    width: 168px;
+    margin-top: 6px;
+	}
+
+	h4 {
+		width: 100%;
+		max-width: 300px;
+		font-weight: 500;
+		line-height: 1.1;
+		margin-bottom: 29px;
+		color: $purple;
+	}
+
+	p {
+		font-size: 18px;
+    padding-left: 8px;
+    line-height: 1.25;
+    letter-spacing: 0px;
+    position: relative;
+    font-weight: normal;
+
+    &:first-of-type:before {
+    	content: open-quote;
+    	position: absolute;
+    	top: 0;
+    	left: -3px;
+    }
+	}
+
+	span {
+		padding-left: 8px;
+		display: inline-block;
+    margin-top: 3px;
+    letter-spacing: -1px;
+    color: $purple;
+
+   	strong {
+   		font-weight: 600;
+	    margin-bottom: 3px;
+	    width: 100%;
+	    float: left;
+   	} 
+	}
+
+	
+}
+
 .footer-nav {
 	overflow: visible;
+  width: 100%;
+  float: left;
 }
